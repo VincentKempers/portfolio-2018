@@ -1,0 +1,120 @@
+@font-face {
+  font-family: bitter-bold;
+  src: url(fonts/Bitter-Bold.ttf);
+}
+
+@font-face {
+  font-family: cabin-medium;
+  src: url(fonts/Cabin-Medium.ttf);
+}
+
+@font-face {
+  font-family: cabin-sb-italic;
+  src: url(fonts/Cabin-SemiBoldMedium.ttf);
+}
+
+@font-face {
+  font-family: cabin-Bold;
+  src: url(fonts/Cabin-Bold.ttf);
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(.9em);
+  }
+  25% {
+    transform: translateY(.5em);
+  }
+  50% {
+    transform: translateY(.1em);
+  }
+  75% {
+    transform: translateY(.5em);
+  }
+  100% {
+    transform: translateY(.9em);
+  }
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: black;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: bitter-bold;
+  color:white;
+}
+
+p,span,li,a {
+  font-family: cabin-medium;
+  color:white;
+}
+
+nav {
+  color: white;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  list-style: none;
+}
+
+nav ul > li {
+  padding: 1em;
+}
+
+section {
+  max-width: 100vw;
+  height: 100vh;
+}
+
+#home {
+  background-image: url(imgs/background.svg);
+  background-position: top;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#home h1 {
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 10em;
+}
+
+#home h1 > span {
+  border-bottom: .2em red solid;
+  border-bottom-width: .2em;
+}
+
+#home > article {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3em;
+}
+
+#home article > a:first-of-type, #home article > a:last-of-type {
+  display: none;
+}
+
+#home article > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#home article div > svg {
+  animation: bounce .9s infinite ease-in;
+}
