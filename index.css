@@ -70,7 +70,7 @@ nav ul > li {
 
 section {
   max-width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 #home {
@@ -110,12 +110,30 @@ section {
   display: none;
 }
 
-#home article > div {
+.show-more {
+  padding-top: 2em;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-#home article div > svg {
+.show-more > svg {
   animation: bounce .9s infinite ease-in;
 }
+
+
+/* About page  */
+#about {
+  margin: 2em;
+}
+
+#about article > h3 {
+  font-family: bitter-bold !important;
+  font-size: 2em;
+}
+
+.about-1 h3 > span, .about-2 h3 > span {
+  color: #0085ff;
+}
+
+/* work layout page */
