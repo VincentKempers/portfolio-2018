@@ -137,3 +137,13 @@ section {
 }
 
 /* work layout page */
+
+#work {
+  margin: 2em;
+}
+
+#work > article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
