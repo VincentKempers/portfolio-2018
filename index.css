@@ -50,7 +50,7 @@ body {
 
 h1,h2,h3,h4,h5,h6 {
   font-family: bitter-bold;
-  color:white;
+  color: white;
 }
 
 p,span,li,a {
@@ -81,8 +81,9 @@ section {
 
 #home {
   background-image: url(imgs/background.svg);
-  background-repeat: repeat;
-  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  /* background-size: contain; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -145,7 +146,7 @@ section {
 /* work layout page */
 
 #work {
-  margin:var(--mobile-margin);
+  margin: var(--mobile-margin);
 }
 
 #work > article {
