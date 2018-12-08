@@ -64,7 +64,7 @@ main > section {
 }
 
 main {
-  margin: 5em 0 0 0;
+  margin: 3em 0 0 0;
 }
 
 main > section > .title {
@@ -119,4 +119,53 @@ footer ul li {
 
 footer ul li:first-of-type {
   color: #5e5e5e;
+}
+
+/* Article page */
+
+.article-grid {
+  display: grid;
+  grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+  max-width: 50em;
+  margin: 1em auto;
+  display: grid;
+  grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+  grid-gap: 2em;
+}
+
+.artcile-grid > article {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.the-article > a {
+  display: block;
+  border: 1px solid white;
+  color: white;
+  text-decoration: none;
+  padding: 0.5em;
+  display: block;
+  padding: 0.5em;
+  border: 1px solid white;
+  transition: 200ms cubic-bezier(0, 0, 0.2, 1);
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.the-article > a::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  transform: scaleX(0);
+  background-color: white;
+  position: absolute;
+  bottom: -3px;
+  left: -3px;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0, 1);
+}
+
+.the-article > a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
 }
