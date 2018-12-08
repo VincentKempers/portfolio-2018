@@ -5,16 +5,20 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node server.js",
+    "server": "http-server ~/Code/portfolio-2018 8080"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/VincentKempers/portfolio-2018.git"
   },
-  "author": "",
+  "author": "Vincent Kempers",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/VincentKempers/portfolio-2018/issues"
   },
-  "homepage": "https://github.com/VincentKempers/portfolio-2018#readme"
+  "homepage": "https://github.com/VincentKempers/portfolio-2018#readme",
+  "devDependencies": {
+    "http-server": "^0.11.1"
+  }
 }
