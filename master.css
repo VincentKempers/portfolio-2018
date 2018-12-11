@@ -145,12 +145,13 @@ main > section > article > h3 {
 }
 
 main > section > article > p {
-  width: 95vw;
+  width: 376px;
 }
 
 @media screen and (max-width: 70em) {
   main > section > article > p {
     max-width: 40em;
+    width: 95vw;
   }
 }
 
